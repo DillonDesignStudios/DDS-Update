@@ -5,6 +5,10 @@
     list-style: none;
 }
 
+body {
+    
+}
+
 .toggleMenu {
     position: fixed;
     padding: 15px 20px 15px 15px;
@@ -18,12 +22,13 @@
 
 .sideMenu {
     position: fixed;
+    top: 0;
     width: 250px;
     margin-left: 0px;
     overflow: hidden;
     height: 100vh;
     max-height: 100vh;
-    background-color: rgba(17, 17, 17, 0.9);
+    background-color: rgba(16, 16, 16, 0.6);
     opacity: 0.9;
     transition: all 0.3s ease-in-out;
 }
@@ -37,10 +42,21 @@
     color: #f6f6f6;
     transition: all 0.3s ease-in-out;
     display: block;
+    visibility: hidden;
 }
 
 .fa-times:hover {
     opacity: 1;
+}
+
+.logoWhite {
+    text-align: center;
+    margin-top: 20%;
+}
+
+.logoWhite img {
+    height: 70%;
+    width: 70%;
 }
 
 .box {
@@ -85,6 +101,7 @@
     font-weight: 200;
     font-family: 'Open Sans';
     color: #f6f6f6;
+    text-align: right;
     padding: 12px 0;
     box-sizing: border-box;
     font-size: 14px;
@@ -94,6 +111,11 @@
     cursor: pointer;
 }
 
+.navItem:hover {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px;)
+}
+
 .boxSmall {
     font-size: 12px;
     color: #d8d8d8;
@@ -101,7 +123,7 @@
     transition: all 0.3s ease-in-out;
     cursor: pointer;
     border-width: 1px;
-    margin: 0 0 20px 10%;
+    margin: 0 0 20px 0;
 }
 
 .boxSmall:hover {
@@ -110,13 +132,42 @@
     transition: all 0.3s ease-in-out;
 }
 
-/***** HEADER *****/
+.hideMenu {
+    margin-left: -250px;
+}
 
-header {
-    margin-left: 250px;
+.opacityOne {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
 }
 
 
+
+
+/***** HEADER *****/
+
+header {
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/landingBG.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.heroTextBox {
+    position: absolute;
+    width: 1140px;
+    top: 30%;
+    left: 20%;
+}
+
+.heroTextBox h1 {
+    font-family: 'Lato';
+    font-weight: 100;
+    font-size: 2.25em;
+    color: #f6f6f6;
+    text-transform: uppercase;
+}
 
 
 

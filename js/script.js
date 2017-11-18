@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $(".fa-times").click(function(){
+        $(".sideMenu").addClass("hideMenu");
+        $(".toggleMenu").addClass("opacityOne");
+    });
+    $(".toggleMenu").click(function(){
+        $(".sideMenu").removeClass("hideMenu");
+        $(".toggleMenu").removeClass("opacityOne");
+    });
+});
